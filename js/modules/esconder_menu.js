@@ -16,18 +16,6 @@ export default function esconderMenu() {
     mudar.classList.add("mostrar");
   }
 
-  const body = document.getElementsByTagName("body")[0];
-  document.addEventListener("scroll", scrollando);
-
-  if (body.addEventListener) {
-    // IE9, Chrome, Safari, Opera
-    // body.addEventListener("mousewheel", detectarDirecaoRolagem, false);
-    // Firefox
-    // body.addEventListener("DOMMouseScroll", detectarDirecaoRolagem, false);
-    //mobile
-    // body.addEventListener("touchmove", detectarDirecaoRolagem, false);
-  }
-
   let ultimaPosicao = 0;
   function scrollando(event) {
     const posicaoAtual = window.scrollY;
@@ -38,29 +26,6 @@ export default function esconderMenu() {
     }
     ultimaPosicao = posicaoAtual;
   }
+  document.addEventListener("scroll", scrollando);
 
-  function detectarDirecaoRolagem(event) {
-    alert(event);
-    let delta = null,
-      direction = false;
-    if (!event) {
-      event = window.event;
-    }
-    if (event.wheelDelta) {
-      // funciona na maioria dos casos
-      delta = event.wheelDelta / 60;
-    } else if (event.detail) {
-      // funciona no Firefox
-      delta = -event.detail / 2;
-    }
-    if (delta !== null) {
-      if ((direction = delta > 0)) {
-        mostrarMenu();
-      } else {
-        esconderMenu();
-      }
-    }
-
-    return direction;
-  }
 }
