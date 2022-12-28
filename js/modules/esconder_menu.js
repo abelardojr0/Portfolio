@@ -23,6 +23,8 @@ export default function esconderMenu() {
     body.addEventListener("mousewheel", detectarDirecaoRolagem, false);
     // Firefox
     body.addEventListener("DOMMouseScroll", detectarDirecaoRolagem, false);
+    //mobile
+    body.addEventListener("touchmove", detectarDirecaoRolagem, false);
   }
 
   function detectarDirecaoRolagem(event) {
