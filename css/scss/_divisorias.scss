@@ -1,0 +1,43 @@
+.divisoria {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  padding: 0 20px;
+  img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  hr {
+    background-color: rgb(237, 218, 13);
+    width: 100%;
+    height: 5px;
+    border-radius: 0px 60px 60px 0px;
+  }
+  .foguete {
+    transform: rotate(0.25turn);
+  }
+}
+
+.divisoria-projetos {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  img {
+    max-width: 50px;
+  }
+  hr {
+    // background-color: rgb(237, 218, 13);
+    width: 100%;
+    height: 5px;
+    border: 2px dashed rgb(237, 218, 13);
+    border-left: none;
+    border-right: none;
+  }
+  img {
+    transform: rotate(0.75turn);
+  }
+}

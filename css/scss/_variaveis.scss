@@ -1,0 +1,51 @@
+$corPrincipal: #ff2400;
+$corSecundaria: rgb(15, 174, 253);
+$corFontePrincipal: rgb(239, 239, 239);
+$corFonteSecundaria: rgb(17, 17, 17);
+$fundoNivel: #dcdcdc;
+$fundoCardMostruario: #2a2a2a;
+$fundoCardResposta: #7d7777;
+$botaoAvancar: rgb(1, 96, 144);
+$botaoBonusPrincipal: rgb(22, 218, 201);
+$botaoBonusSecundaria: rgb(8, 112, 104);
+$sombra: rgba(0, 0, 0, 0.8);
+$sombraSuave: rgba(0, 0, 0, 0.5);
+$corTremer: rgba(255, 0, 0, 0.4);
+$botaoErroPrincipal: rgb(191, 19, 19);
+$botaoErroSecundaria: rgb(77, 4, 4);
+$botaoDesabilitado: rgb(118, 118, 120);
+$corConcluido: rgb(8, 133, 20);
+
+$fontePrincipal: "Roboto", sans-serif;
+$fonteCursiva: "Gloria Hallelujah", cursive;
+$fonteLogin: "Rubik Bubbles", cursive;
+
+@mixin fontePrincipal($tamanho) {
+  font-family: $fontePrincipal;
+  @if $tamanho == p {
+    font-size: 0.8rem;
+  } @else if $tamanho == m1 {
+    font-size: 1rem;
+  } @else if $tamanho == m2 {
+    font-size: 1.5rem;
+  } @else if $tamanho == g {
+    font-size: 2rem;
+  } @else if $tamanho == g2 {
+    font-size: 3rem;
+  }
+}
+
+@mixin fonteCursiva($tamanho) {
+  font-family: $fonteCursiva;
+  @if $tamanho == p {
+    font-size: 0.8rem;
+  } @else if $tamanho == m1 {
+    font-size: 1rem;
+  } @else if $tamanho == m2 {
+    font-size: 1.5rem;
+  } @else if $tamanho == g {
+    font-size: 2rem;
+  } @else if $tamanho == g2 {
+    font-size: 3rem;
+  }
+}

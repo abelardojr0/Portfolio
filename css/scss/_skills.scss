@@ -1,0 +1,139 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+.imagem-skills {
+  display: none;
+  img {
+    max-width: 500px;
+    transform: rotate(0.75turn);
+    animation: movendo 2s infinite ease-in-out;
+  }
+  @include d(g) {
+    display: block;
+  }
+}
+
+@keyframes movendo {
+  0% {
+    transform: translate3d(-30px, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-30px, 0, 0);
+  }
+}
+.skills-infos {
+  ul {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    @include d(g) {
+      gap: 30px;
+    }
+    li {
+      background-color: black;
+      width: 70px;
+      padding: 1rem;
+      position: relative;
+      border-radius: 10px 15px 15px 10px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @include d(g) {
+        width: 100px;
+      }
+      &::before {
+        content: "";
+        width: 10px;
+        height: 100%;
+        background-color: red;
+        border-radius: 15px 0px 0px 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &.html {
+        &::before {
+          background-color: #ff4e1d;
+          box-shadow: 10px 10px 30px 5px #ff4e1d;
+        }
+      }
+      &.css {
+        &::before {
+          background-color: #0074be;
+          box-shadow: 10px 10px 30px 5px #0074be;
+        }
+      }
+      &.sass {
+        &::before {
+          background-color: #d56fa4;
+          box-shadow: 10px 10px 30px 5px #d56fa4;
+        }
+      }
+      &.bootstrap {
+        &::before {
+          background-color: #8c13fd;
+          box-shadow: 10px 10px 30px 5px #8c13fd;
+        }
+      }
+      &.js {
+        &::before {
+          background-color: #f7df1e;
+          box-shadow: 10px 10px 30px 5px #f7df1e;
+        }
+      }
+      &.react {
+        &::before {
+          background-color: #00ccff;
+          box-shadow: 10px 10px 30px 5px #00ccff;
+        }
+      }
+      &.typescript {
+        &::before {
+          background-color: #017acb;
+          box-shadow: 10px 10px 30px 5px #017acb;
+        }
+      }
+      &.styled-components {
+        &::before {
+          background-color: #a06940;
+          box-shadow: 10px 10px 30px 5px #a06940;
+        }
+      }
+      &.node {
+        &::before {
+          background-color: #539e43;
+          box-shadow: 10px 10px 30px 5px #539e43;
+        }
+      }
+      &.python {
+        &::before {
+          background-color: #f8c63d;
+          box-shadow: 10px 10px 30px 5px #f8c63d;
+        }
+      }
+      &.mysql {
+        &::before {
+          background-color: #3765af;
+          box-shadow: 10px 10px 30px 5px #3765af;
+        }
+      }
+      &.git {
+        &::before {
+          background-color: #f05033;
+          box-shadow: 10px 10px 30px 5px #f05033;
+        }
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+}

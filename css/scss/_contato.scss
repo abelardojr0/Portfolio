@@ -1,0 +1,131 @@
+.contato {
+  @include d(g) {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+  }
+}
+
+.contato-infos {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    @include d(g) {
+      margin-top: 15px;
+    }
+  }
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid white;
+
+    border-radius: 15px;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 5px;
+    outline: none;
+    @include d(g) {
+      width: 130%;
+      padding: 0.6rem 1.2rem;
+    }
+    &:focus {
+      border: 2px solid rgb(237, 218, 13);
+      box-shadow: 5px 5px 20px 5px rgba(255, 255, 255, 0.5);
+    }
+  }
+  textarea {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 0.8rem;
+    margin-top: 5px;
+    outline: none;
+    width: 100%;
+
+    @include d(g) {
+      width: 130%;
+      padding: 0.6rem 1.2rem;
+    }
+    &:focus {
+      border: 2px solid rgb(237, 218, 13);
+      box-shadow: 5px 5px 20px 5px rgba(255, 255, 255, 0.5);
+    }
+  }
+  button {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: rgb(237, 218, 13);
+    color: black;
+    cursor: pointer;
+    @include d(g) {
+      width: 130%;
+      padding: 0.6rem 1.2rem;
+      font-size: 3rem;
+    }
+    &:hover {
+      filter: opacity(0.5);
+    }
+  }
+}
+.sociais {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 0.5rem;
+    @include d(g) {
+      flex-direction: column;
+      gap: 20px;
+      position: absolute;
+      top: 25%;
+      left: 72%;
+    }
+  }
+
+  img {
+    max-width: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.imagem-contato {
+  display: none;
+  img {
+    max-width: 500px;
+    animation: movendo 5s infinite ease-in-out;
+    border: none;
+  }
+  @include d(g) {
+    display: block;
+  }
+}
+
+@keyframes movendo {
+  0% {
+    transform: translate3d(0, -30px, 0);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -30px, 0);
+  }
+}

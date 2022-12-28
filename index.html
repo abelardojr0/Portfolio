@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifolio</title>
+  <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+</head>
+
+<body>
+
+  <nav data-menu class="menu noite">
+    <ul>
+      <li><a href="#inicio" data-link class="active"><i class="lni lni-home"></i></a></li>
+    </ul>
+    <ul>
+      <li><a href="#sobre" data-link><i class="lni lni-pencil-alt"></i></a></li>
+    </ul>
+    <ul>
+      <li><a href="#projetos" data-link><i class="lni lni-layers"></i></a></li>
+    </ul>
+    <ul>
+      <li><a href="#skills" data-link><i class="lni lni-database"></i></a></li>
+    </ul>
+    <ul>
+      <li><a href="#contato" data-link><i class="lni lni-phone"></i></a></li>
+    </ul>
+    <div data-nave class="nave">
+      <div class="luz"></div>
+    </div>
+  </nav>
+
+
+  <div data-mudar class="component">
+    <div class="switch">
+      <label for="toggle">
+        <input data-modo="noite" id="toggle" class="toggle-switch" type="checkbox">
+        <div class="sun-moon">
+          <div class="dots"></div>
+        </div>
+        <div class="background">
+          <div class="stars1"></div>
+          <div class="stars2"></div>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <section class="page">
+
+    <article data-scroll class="inicio">
+      <div id="inicio"></div>
+      <img data-perfil class="perfil" src="img/perfis/perfil-noite.jpg" alt="perfil">
+      <div class="texto">
+        <p>Abelardo Júnior</p>
+        <p data-texto_animado class="texto-animado">Desenvolvedor Front-End</p>
+      </div>
+    </article>
+
+    <span class="divisoria">
+      <hr data-rastro>
+      <img data-imagem-divisoria class="foguete" src="img/adereços/divisoria-externa-noite.png" alt="">
+    </span>
+
+    <article data-scroll data-container class="sobre">
+      <div id="sobre"></div>
+
+      <div class="sobre-infos container">
+        <h1 data-titulo class="titulo">Sobre</h1>
+        <div data-sobre_texto class="sobre_texto">
+          <p>Sem fui apaixonado por tecnologia e por isso sempre trabalhei na área de T.I, porém nunca como programador, me formei em 2014 em ADS, porém continuei trabalhando no setor de Infraestrutura.</p>
+          <hr>
+          <p>Porém em 2022 decidi que iria me tornar o desenvolvedor que não me tornei em 2014 e esse ano comecei a estudar com muita dedicação o desenvolvimento Front-End.</p>
+        </div>
+      </div>
+
+      <div class="imagem-sobre">
+        <img data-imagem-sobre src="img/adereços/sobre-imagem-noite.png" alt="">
+      </div>
+
+    </article>
+
+
+
+    <span class="divisoria">
+      <hr data-rastro>
+      <img data-imagem-divisoria class="foguete" src="img/adereços/divisoria-externa-noite.png" alt="">
+    </span>
+
+
+    <article data-scroll data-container class="projetos container">
+      <div id="projetos"></div>
+
+      <h1 data-titulo class="titulo">Projetos</h1>
+
+      <div class="imagem-projetos">
+        <img data-imagem-projetos src="img/adereços/projetos-imagem-noite.png" alt="">
+      </div>
+
+      <div class="imagem-projetos2">
+        <img data-imagem-projetos-invertida src="img/adereços/projetos-imagem-noite-invertida.png" alt="">
+      </div>
+
+      <div id="inputContainer">
+        <fieldset id="aspectRatio--group" class="inputGroup">
+          <legend class="label">Selecione uma categoria</legend>
+          <div class="segmentedControl">
+            <span class="segmentedControl--group">
+              <input data-radio-pessoais data-radio type="radio" name="projetos-radio" id="pessoais" checked />
+              <label class="label" for="pessoais">Pessoais</label>
+            </span>
+            <span class="segmentedControl--group">
+              <input data-radio-cursos data-radio type="radio" name="projetos-radio" id="cursos" />
+              <label class="label" for="cursos">Cursos</label>
+            </span>
+          </div>
+        </fieldset>
+      </div>
+
+
+
+      <div class="projetos-mobile">
+
+
+        <div data-mobile-pessoais class="projetos-mobile-pessoais ativo">
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/comic-quizz.gif" alt="comic-quizz">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Comic Quizz</h2>
+              <p>Um jogo estilo quizz com personargens secreto, tematizado com personargens do mundo dos quadrinhos.</p>
+              <p>Maiores desafios: Desenvolver a lógica do jogo, como o controle das letras clicadas, e construir o menu dicas, que permite remover ou selecionar automaticamente e aletoriamente uma letra, deixar tudo responsivo e também controlar todo o progresso do jogador.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="abelardojr0.github.io/Comic-Quizz/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Comic-Quizz">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/find.gif" alt="comic-quizz">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Find</h2>
+              <p>Projeto para automação de cálculos matemáticos, resolve facilmente problemas de Progressão Aritimética e Progressão Geométrica</p>
+              <p>Maiores desafios: Estabeleter e deixar funcional as formulas matemáticas para os mais diversos casos possíveis, e também deixar o design agradável e intuitivo.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Find-PA-PG/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Find-PA-PG">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/hero-memory.gif" alt="comic-quizz">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Hero Memory</h2>
+              <p>Jogo da memória com tema de super heróis.</p>
+              <p>Maiores desafios: Deixar o design agradável e funcional, desenvover a lógica de acertos e erros do jogo, ligar com armazenamento de dados.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Hero-Memory/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Hero-Memory">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/up-the-irons.gif" alt="comic-quizz">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Up The Irons</h2>
+              <p>Fã page com gestão de downloads, conteudo sobre a banda e um gigantesco acervo.</p>
+              <p>Maiores desafios: Manter a responsividade e criar o layout das diversas páginas, projeto feito para fixar conhecimentos de grid e flexbox</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Up-The-Irons/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Up-The-Irons">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/pokedex.gif" alt="comic-quizz">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>PokeDex</h2>
+              <p>Lista de pokemons de todas as gerações</p>
+              <p>Maiores desafios: Consumir API com Fetch API e também atualizar para o uso de Async await, e construir um design com dados vindos de um servidor.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Pokedex/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Pokedex">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/orkut.gif" alt="comic-quizz">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Clone Orkut</h2>
+              <p>Clone da icônica rede social Orkut.</p>
+              <p>Maiores desafios: A criação do layout mais modernizado e a responsividade (Também pensar em um desing que fosse mobile, já que a rede social acabou antes de se lançar no modo mobile)</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Pokedex/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Pokedex">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-mobile-cursos class="projetos-mobile-cursos">
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/animais.png" alt="animais">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Animais Fantásticos</h2>
+              <p>Landing Page criada durante o curso Javascript ES6 Completo do Curso Origamid.</p>
+              <p>Maiores desafios: Desenvolver e aprimorar ferramentas avançadas de javascript, como consultas de API, controle total do DOM, construção de um código otimizado com classes.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="abelardojr0.github.io/Comic-Quizz/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Comic-Quizz">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/robotron.png" alt="robotron">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Robotron 2000</h2>
+              <p>Página construída durante o curso de Javascript da plataforma da Alura com intuito de praticar controle do DOM.</p>
+              <p>Maiores desafios: Controlar elementos do DOM, dominar eventos.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Find-PA-PG/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Find-PA-PG">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/bikcraft.png" alt="bikcraft">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Bikscraft</h2>
+              <p>Site criado durante o curso HTML e CSS Completo do Curso Origamid.</p>
+              <p>Maiores desafios: Entender as tags mais importantes e suas semânticas, dispor itens com flex e grid organização de multi-páginas, controle de dados e do DOM.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Hero-Memory/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Hero-Memory">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/flexblog.png" alt="comic-quizz">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Flexblog</h2>
+              <p>Landing Page criada durante o curso Flexbox do Curso Origamid.</p>
+              <p>Maiores desafios: Trabalhar com flexbox, entender bem a disposição de item em uma landing page e como controla-los.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Up-The-Irons/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Up-The-Irons">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/mochila-viagem.png" alt="comic-quizz">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Mochila de Viagens</h2>
+              <p>Aplicação criada durante o curso Javascript da plataforma Alura.</p>
+              <p>Maiores desafios: Lidar e controlar dados através do localstorage.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Pokedex/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Pokedex">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/wildbeast.png" alt="wildbeast">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Wildbeast</h2>
+              <p>Landing Page criada durante o curso GridLayout do Curso Origamid.</p>
+              <p>Maiores desafios: Trabalhar com grid, entender bem a disposição de item em uma landing page e como controla-los.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Pokedex/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Pokedex">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="divisoria-projetos">
+            <hr>
+            <img data-divisoria-interna src="img/adereços/divisoria-interna-noite.png" alt="">
+          </div>
+
+          <div class="projeto">
+            <img class="projeto-imagem" src="img/thumbnails/bomgosto.png" alt="bomgosto">
+            <div class="projeto-infos">
+              <h2 data-subtitulo>Bom gosto</h2>
+              <p>Landing Page criada durante o curso Sass do Curso Origamid.</p>
+              <p>Maiores desafios: Trabalhar com Sass, entender as ferramentas novas disponíveis e como desenvolver com mixinse variáveis por exemplo.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Pokedex/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Pokedex">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <article class="carrossel">
+        <div data-carrossel-pessoais class="options pessoais ativo">
+          <div class="option active" style="--optionBackground:url(../img/thumbnails/comic-quizz.gif);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img/icons/comic-quizz.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Comic-Quizz</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Comic Quizz</h2>
+              <p>Um jogo estilo quizz com personargens secreto, tematizado com personargens do mundo dos quadrinhos.</p>
+              <p>Maiores desafios: Desenvolver a lógica do jogo, como o controle das letras clicadas, e construir o menu dicas, que permite remover ou selecionar automaticamente e aletoriamente uma letra, deixar tudo responsivo e também controlar todo o progresso do jogador.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="abelardojr0.github.io/Comic-Quizz/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Comic-Quizz">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/pokedex.gif);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img/icons/pokedex.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Pokedex</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>PokeDex</h2>
+              <p>Lista de pokemons de todas as gerações</p>
+              <p>Maiores desafios: Consumir API com Fetch API e também atualizar para o uso de Async await, e construir um design com dados vindos de um servidor.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Pokedex/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Pokedex">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/up-the-irons.gif);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img/icons/up-the-irons.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Up The Irons</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Up The Irons</h2>
+              <p>Fã page com gestão de downloads, conteudo sobre a banda e um gigantesco acervo.</p>
+              <p>Maiores desafios: Manter a responsividade e criar o layout das diversas páginas, projeto feito para fixar conhecimentos de grid e flexbox</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Up-The-Irons/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Up-The-Irons">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/hero-memory.gif);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img/icons/hero-memory.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Hero Memory</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Hero Memory</h2>
+              <p>Jogo da memória com tema de super heróis.</p>
+              <p>Maiores desafios: Deixar o design agradável e funcional, desenvover a lógica de acertos e erros do jogo, ligar com armazenamento de dados.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Hero-Memory/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Hero-Memory">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/find.gif);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img/icons/find.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Find</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Find</h2>
+              <p>Projeto para automação de cálculos matemáticos, resolve facilmente problemas de Progressão Aritimética e Progressão Geométrica</p>
+              <p>Maiores desafios: Estabeleter e deixar funcional as formulas matemáticas para os mais diversos casos possíveis, e também deixar o design agradável e intuitivo.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Find-PA-PG/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Find-PA-PG">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/orkut.gif);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img/icons/orkut.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Clone Orkut</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Clone Orkut</h2>
+              <p>Clone da icônica rede social Orkut.</p>
+              <p>Maiores desafios: A criação do layout mais modernizado e a responsividade (Também pensar em um desing que fosse mobile, já que a rede social acabou antes de se lançar no modo mobile)</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/sass.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Pokedex/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Pokedex">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-carrossel-cursos class="options cursos">
+          <div class="option active" style="--optionBackground:url(../img/thumbnails/animais.png);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img/icons/origamid.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Animais Fantásticos</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Animais Fantásticos</h2>
+              <p>Landing Page criada durante o curso Javascript ES6 Completo do Curso Origamid.</p>
+              <p>Maiores desafios: Desenvolver e aprimorar ferramentas avançadas de javascript, como consultas de API, controle total do DOM, construção de um código otimizado com classes.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="abelardojr0.github.io/Comic-Quizz/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Comic-Quizz">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/robotron.png);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img/icons/alura.jpg" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Robotron 2000</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Robotron 2000</h2>
+              <p>Página construída durante o curso de Javascript da plataforma da Alura com intuito de praticar controle do DOM.</p>
+              <p>Maiores desafios: Controlar elementos do DOM, dominar eventos.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Up-The-Irons/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Up-The-Irons">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/bikcraft.png);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img//icons/origamid.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Bikscraft</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Bikscraft</h2>
+              <p>Site criado durante o curso HTML e CSS Completo do Curso Origamid.</p>
+              <p>Maiores desafios: Entender as tags mais importantes e suas semânticas, dispor itens com flex e grid organização de multi-páginas, controle de dados e do DOM.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Up-The-Irons/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Up-The-Irons">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/flexblog.png);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img//icons/origamid.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Flexblog</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Flexblog</h2>
+              <p>Landing Page criada durante o curso Flexbox do Curso Origamid.</p>
+              <p>Maiores desafios: Trabalhar com flexbox, entender bem a disposição de item em uma landing page e como controla-los.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Hero-Memory/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Hero-Memory">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/mochila-viagem.png);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img/icons/alura.jpg" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Mochila de Viagens</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Mochila de Viagens</h2>
+              <p>Aplicação criada durante o curso Javascript da plataforma Alura.</p>
+              <p>Maiores desafios: Lidar e controlar dados através do localstorage.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/JS.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Find-PA-PG/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Find-PA-PG">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/wildbeast.png);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img//icons/origamid.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Wildbeast</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Wildbeast</h2>
+              <p>Landing Page criada durante o curso GridLayout do Curso Origamid.</p>
+              <p>Maiores desafios: Trabalhar com grid, entender bem a disposição de item em uma landing page e como controla-los.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Pokedex/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Pokedex">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="option" style="--optionBackground:url(../img/thumbnails/bomgosto.png);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="img//icons/origamid.png" alt="">
+              </div>
+              <div class="info">
+                <div class="main">Bom gosto</div>
+              </div>
+            </div>
+            <div class="carrossel-infos">
+              <h2 data-subtitulo>Bom gosto</h2>
+              <p>Landing Page criada durante o curso Sass do Curso Origamid.</p>
+              <p>Maiores desafios: Trabalhar com Sass, entender as ferramentas novas disponíveis e como desenvolver com mixinse variáveis por exemplo.</p>
+              <div class="projeto-tecnologias">
+                <ul>
+                  <li><img src="img/tecnologias/html.png" alt=""></li>
+                  <li><img src="img/tecnologias/css.png" alt=""></li>
+                  <li><img src="img/tecnologias/git.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="botoes">
+                <a target="_blank" class="botao" href="https://abelardojr0.github.io/Pokedex/">Site</a>
+                <a target="_blank" class="botao" href="https://github.com/abelardojr0/Pokedex">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </article>
+
+
+
+
+
+    <span class="divisoria">
+      <hr data-rastro>
+      <img data-imagem-divisoria class="foguete" src="img/adereços/divisoria-externa-noite.png" alt="">
+    </span>
+
+    <article data-scroll data-container class="skills container">
+
+      <div id="skills"></div>
+      <div class="skills-infos">
+        <h1 data-titulo class="titulo">Skills</h1>
+        <ul>
+          <li class="html"><img src="img/tecnologias/html.png" alt="html"></li>
+          <li class="css"><img src="img/tecnologias/css.png" alt="css"></li>
+          <li class="sass"><img src="img/tecnologias/sass.png" alt="sass"></li>
+          <li class="bootstrap"><img src="img/tecnologias/bootstrap.png" alt="bootstrap"></li>
+          <li class="js"><img src="img/tecnologias/JS.png" alt="javascript"></li>
+          <li class="react"><img src="img/tecnologias/react.png" alt="react"></li>
+          <li class="styled-components"><img src="img/tecnologias/styled-components.png" alt="styled-components"></li>
+          <li class="typescript"><img src="img/tecnologias/typescript.png" alt="typescript"></li>
+          <li class="node"><img src="img/tecnologias/node.png" alt="node"></li>
+          <li class="python"><img src="img/tecnologias/python.png" alt="python"></li>
+          <li class="mysql"><img src="img/tecnologias/mysql.png" alt="mysql"></li>
+          <li class="git"><img src="img/tecnologias/git.png" alt="git"></li>
+        </ul>
+      </div>
+
+      <div class="imagem-skills">
+        <img data-imagem-skills src="img/adereços/skills-imagem-noite.png" alt="">
+      </div>
+    </article>
+
+    <span class="divisoria">
+      <hr data-rastro>
+      <img data-imagem-divisoria class="foguete" src="img/adereços/divisoria-externa-noite.png" alt="">
+    </span>
+
+    <article data-scroll data-container class="contato container">
+      <div id="contato"></div>
+
+      <div class="contato-infos">
+        <h1 data-titulo class="titulo">Contato</h1>
+        <form data-form action="https://formspree.io/f/moqzazpz" method="POST">
+          <label for="nome">Nome</label>
+          <input data-input type="text" name="nome" id="nome">
+          <label for="email">Email</label>
+          <input data-input type="email" name="email" id="email">
+          <label for="assunto">Assunto</label>
+          <input data-input type="text" name="assunto" id="assunto">
+          <label for="mensagem">Mensagem</label>
+          <textarea data-input name="mensagem" id="mensagem" cols="25" rows="10"></textarea>
+          <button data-input type="submit">Enviar</button>
+        </form>
+      </div>
+
+
+      <div class="sociais">
+        <div class="imagem-contato">
+          <img data-imagem-contato src="img/adereços/contato-imagem-noite.png" alt="">
+        </div>
+        <ul data-lista-sociais>
+          <li><a target="_blank" href="https://github.com/abelardojr0"><img src="img/sociais/github.png" alt="github"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/abelardo-junior/"><img src="img/sociais/linkedin.png" alt="linkedin"></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/abel.jr_/"><img src="img/sociais/instagram.png" alt="instagram"></a></li>
+          <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5585985300694"><img src="img/sociais/whatsapp.png" alt="whatsapp"></a></li>
+
+
+        </ul>
+      </div>
+    </article>
+
+    <footer data-footer class="footer noite">
+      <p>Abelardo Júnior ©</p>
+      <p class="direitos">Alguns direitos reservados.</p>
+    </footer>
+  </section>
+
+  <canvas data-noite class="ativo" id="bgCanvas"></canvas>
+  <canvas class="ativo" id="terCanvas"></canvas>
+
+
+  <div data-dia class="dia">
+    <div class="cloud"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+  </div>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

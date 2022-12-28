@@ -1,0 +1,58 @@
+.dia {
+  display: none;
+}
+
+.dia.ativo {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(#00bfff, #fff);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.cloud {
+  top: 20%;
+  left: 15%;
+  animation: scrollx 6s ease-in-out infinite alternate;
+}
+
+.cloud,
+.cloud::before,
+.cloud::after {
+  position: absolute;
+  width: 40vmin;
+  height: 20vmin;
+  border-radius: 57% 43% 52% 48% / 48% 59% 41% 52%;
+  border: 1vmin solid #fff;
+  background: #fff;
+  opacity: 0.95;
+}
+
+.cloud::before {
+  content: "";
+  transform: translate(-13vmin, 8vmin);
+}
+
+.cloud::after {
+  content: "";
+  transform: translate(8vmin, 5vmin);
+}
+
+@keyframes scrollx {
+  to {
+    transform: translateX(30%);
+  }
+}
+
+.cloud2 {
+  top: 40%;
+  left: 5%;
+}
+
+.cloud3 {
+  top: 60%;
+  left: 40%;
+}
