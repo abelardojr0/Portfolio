@@ -76,7 +76,7 @@ export default function modoNoturno() {
       });
       sobreTexto.style.color = "black";
       subtitulos.forEach((subtitulo) => {
-        subtitulo.style.color = "black";
+        subtitulo.style.color = "white";
       });
       inputs.forEach((input) => {
         input.style.border = "2px solid black";
