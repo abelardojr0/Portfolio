@@ -76,7 +76,7 @@ export default function modoNoturno() {
       });
       sobreTexto.style.color = "black";
       subtitulos.forEach((subtitulo) => {
-        subtitulo.style.color = "white";
+        subtitulo.style.color = "black";
       });
       inputs.forEach((input) => {
         input.style.border = "2px solid black";
@@ -95,6 +95,11 @@ export default function modoNoturno() {
       footer.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
       footer.style.color = "black";
       footer.classList.remove("noite");
+      if (window.screen.width > 760) {
+        subtitulos.forEach((subtitulo) => {
+          subtitulo.style.color = "white";
+        });
+      }
     } else {
       target.dataset.modo = "noite";
       noite.classList.add("ativo");
