@@ -17,17 +17,30 @@ export default function esconderMenu() {
   }
 
   const body = document.getElementsByTagName("body")[0];
+  document.addEventListener("scroll", scrollando);
 
   if (body.addEventListener) {
     // IE9, Chrome, Safari, Opera
-    body.addEventListener("mousewheel", detectarDirecaoRolagem, false);
+    // body.addEventListener("mousewheel", detectarDirecaoRolagem, false);
     // Firefox
-    body.addEventListener("DOMMouseScroll", detectarDirecaoRolagem, false);
+    // body.addEventListener("DOMMouseScroll", detectarDirecaoRolagem, false);
     //mobile
-    body.addEventListener("touchmove", detectarDirecaoRolagem, false);
+    // body.addEventListener("touchmove", detectarDirecaoRolagem, false);
+  }
+
+  let ultimaPosicao = 0;
+  function scrollando(event) {
+    const posicaoAtual = window.scrollY;
+    if (ultimaPosicao > posicaoAtual) {
+      mostrarMenu();
+    } else {
+      esconderMenu();
+    }
+    ultimaPosicao = posicaoAtual;
   }
 
   function detectarDirecaoRolagem(event) {
+    alert(event);
     let delta = null,
       direction = false;
     if (!event) {
