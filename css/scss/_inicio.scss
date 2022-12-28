@@ -9,7 +9,7 @@
 .perfil {
   position: relative;
   z-index: 1;
-  max-width: 200px;
+  max-width: 300px;
   border-radius: 50%;
   border: 2px solid white;
   margin-top: 60px;
@@ -24,13 +24,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 2rem;
   gap: 10px;
   @include d(g) {
     font-size: 3rem;
   }
 }
 .texto-animado {
+  font-size: 1.4rem;
   color: rgb(237, 218, 13);
   font-weight: bold;
   animation: pulsando 1500ms infinite ease-in-out;
