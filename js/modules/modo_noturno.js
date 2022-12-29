@@ -1,18 +1,28 @@
 export default function modoNoturno() {
-  const modo = document.querySelector("[data-modo]");
+  // ESTRUTURA
   const noite = document.querySelector("[data-noite]");
   const dia = document.querySelector("[data-dia]");
+  const modo = document.querySelector("[data-modo]");
   const menu = document.querySelector("[data-menu]");
-  const perfil = document.querySelector("[data-perfil]");
+  const body = document.body;
+
+  //TEXTOS
   const texto_animado = document.querySelector("[data-texto_animado]");
   const titulos = document.querySelectorAll("[data-titulo]");
   const sobreTexto = document.querySelector("[data-sobre_texto]");
   const carrossel = document.querySelector(".carrossel");
   const subtitulos = document.querySelectorAll("[data-subtitulo]");
   const form = document.querySelector("[data-form]");
+
+  //FORMULARIO
   const inputs = document.querySelectorAll("[data-input]");
   const inputButton = document.querySelector("[data-input][type='submit']");
+
+  //FOOTER
   const footer = document.querySelector("[data-footer]");
+
+  //IMAGENS
+  const perfil = document.querySelector("[data-perfil]");
   const imagemSobre = document.querySelector("[data-imagem-sobre]");
   const imagemProjetos = document.querySelector("[data-imagem-projetos]");
   const imagemProjetosInvertida = document.querySelector(
@@ -24,19 +34,33 @@ export default function modoNoturno() {
   const divisoriaInterna = document.querySelectorAll(
     "[data-divisoria-interna]"
   );
+
+  //DETALHES
+
   const listaSociais = document.querySelector("[data-lista-sociais");
   const rastros = document.querySelectorAll("[data-rastro]");
   const options = document.querySelectorAll(".option");
   const botoes = document.querySelectorAll(".botao");
-  const legend = document.querySelector("legend");
-  const body = document.body;
 
+  //DOWNLOAD
+  const legend = document.querySelector("legend");
+  const downloadBotao = document.querySelector("[data-ancora]");
+
+  console.log(downloadBotao);
   function mudarModo({ target }) {
     if (target.dataset.modo === "noite") {
+      //VARIAVEIS
       target.dataset.modo = "dia";
+      const cor_dia = "rgb(237, 28, 9)";
+      const corPrincipal_dia = "black";
+
+      //ESTRUTURA
       noite.classList.remove("ativo");
       dia.classList.add("ativo");
       menu.classList.remove("noite");
+      body.style.color = corPrincipal_dia;
+
+      //IMAGENS
       perfil.setAttribute("src", "img/perfis/perfil-dia.jpg");
       imagemSobre.setAttribute("src", "img/adereços/sobre-imagem-dia.png");
       imagemProjetos.setAttribute(
@@ -55,56 +79,76 @@ export default function modoNoturno() {
       divisoriaInterna.forEach((imagem) => {
         imagem.setAttribute("src", "img/adereços/divisoria-interna-dia.png");
       });
-      rastros.forEach((rastro) => {
-        rastro.style.backgroundColor = "rgb(237, 28, 9)";
-      });
-      body.style.color = "black";
-      legend.style.color = "black";
+
+      // DOWNLOAD
+      legend.style.color = corPrincipal_dia;
+      downloadBotao.style.color = corPrincipal_dia;
+      downloadBotao.style.border = `2px solid ${corPrincipal_dia}`;
+      downloadBotao.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
+
+      //TEXTOS
       carrossel.style.color = "white";
-      document.body.style.setProperty("--color-fire", "rgb(237, 28, 9)");
-      texto_animado.style.color = "rgb(237, 28, 9)";
-      inputButton.style.backgroundColor = "rgb(237, 28, 9)";
-
-      botoes.forEach((botao) => {
-        botao.style.backgroundColor = "rgb(237, 28, 9)";
-      });
-      options.forEach((option) => {
-        option.style.border = "2px solid rgb(237, 28, 9)";
-      });
+      texto_animado.style.color = cor_dia;
       titulos.forEach((titulo) => {
-        titulo.style.color = "black";
+        titulo.style.color = corPrincipal_dia;
       });
-      sobreTexto.style.color = "black";
-      subtitulos.forEach((subtitulo) => {
-        subtitulo.style.color = "black";
-      });
-      inputs.forEach((input) => {
-        input.style.border = "2px solid black";
-
-        function iniciarFocus({ target }) {
-          target.style.border = "2px solid rgb(237, 28, 9)";
-        }
-        function removerFocus({ target }) {
-          target.style.border = "2px solid black";
-        }
-        input.addEventListener("focus", iniciarFocus);
-        input.addEventListener("blur", removerFocus);
-      });
-      listaSociais.style.flexDirection = "row";
-      form.style.color = "black";
-      footer.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
-      footer.style.color = "black";
-      footer.classList.remove("noite");
+      sobreTexto.style.color = corPrincipal_dia;
       if (window.screen.width > 760) {
         subtitulos.forEach((subtitulo) => {
           subtitulo.style.color = "white";
         });
       }
+
+      //CARROSSEL
+      document.body.style.setProperty("--color-fire", cor_dia);
+      botoes.forEach((botao) => {
+        botao.style.backgroundColor = cor_dia;
+      });
+      options.forEach((option) => {
+        option.style.border = `2px solid ${cor_dia}`;
+      });
+      subtitulos.forEach((subtitulo) => {
+        subtitulo.style.color = corPrincipal_dia;
+      });
+
+      //FORUMULARIO
+      inputButton.style.backgroundColor = cor_dia;
+      inputs.forEach((input) => {
+        input.style.border = `2px solid ${corPrincipal_dia}`;
+        function iniciarFocus({ target }) {
+          target.style.border = `2px solid ${cor_dia}`;
+        }
+        function removerFocus({ target }) {
+          target.style.border = `2px solid ${corPrincipal_dia}`;
+        }
+        input.addEventListener("focus", iniciarFocus);
+        input.addEventListener("blur", removerFocus);
+      });
+      form.style.color = corPrincipal_dia;
+
+      //DETALHES
+      listaSociais.style.flexDirection = "row";
+      rastros.forEach((rastro) => {
+        rastro.style.backgroundColor = cor_dia;
+      });
+
+      // FOOTER
+      footer.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+      footer.style.color = corPrincipal_dia;
+      footer.classList.remove("noite");
     } else {
+      //VARIAVEIS
       target.dataset.modo = "noite";
+      const cor_noite = "rgb(237, 218, 13)";
+      const corPrincipal_noite = "white";
+
+      //ESTRUTURA
       noite.classList.add("ativo");
       dia.classList.remove("ativo");
       menu.classList.add("noite");
+      body.style.color = corPrincipal_noite;
+
+      //IMAGENS
       perfil.setAttribute("src", "img/perfis/perfil-noite.jpg");
       imagemSobre.setAttribute("src", "img/adereços/sobre-imagem-noite.png");
       imagemProjetos.setAttribute(
@@ -126,46 +170,59 @@ export default function modoNoturno() {
       divisoriaInterna.forEach((imagem) => {
         imagem.setAttribute("src", "img/adereços/divisoria-interna-noite.png");
       });
-      body.style.color = "white";
-      legend.style.color = "white";
 
+      //DOWNLOAD
+      legend.style.color = corPrincipal_noite;
+      downloadBotao.style.color = corPrincipal_noite;
+      downloadBotao.style.border = `2px solid ${corPrincipal_noite}`;
+      downloadBotao.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+
+      //DETALHES
       rastros.forEach((rastro) => {
-        rastro.style.backgroundColor = "rgb(237, 218, 13)";
-      });
-      document.body.style.setProperty("--color-fire", "rgb(237, 218, 13)");
-      texto_animado.style.color = "rgb(237, 218, 13)";
-      inputButton.style.backgroundColor = "rgb(237, 218, 13)";
-      botoes.forEach((botao) => {
-        botao.style.backgroundColor = "rgb(237, 218, 13)";
-      });
-      options.forEach((option) => {
-        option.style.border = "2px solid rgb(237, 218, 13)";
-      });
-      titulos.forEach((titulo) => {
-        titulo.style.color = "white";
-      });
-      sobreTexto.style.color = "white";
-      subtitulos.forEach((subtitulo) => {
-        subtitulo.style.color = "white";
-      });
-      inputs.forEach((input) => {
-        input.style.border = "2px solid white";
-
-        function iniciarFocus({ target }) {
-          target.style.border = "2px solid rgb(237, 218, 13)";
-        }
-        function removerFocus({ target }) {
-          target.style.border = "2px solid white";
-        }
-        input.addEventListener("focus", iniciarFocus);
-        input.addEventListener("blur", removerFocus);
+        rastro.style.backgroundColor = cor_noite;
       });
       if (window.screen.width > 1024) {
         listaSociais.style.flexDirection = "column";
       }
-      form.style.color = "white";
+
+      //TEXTOS
+      texto_animado.style.color = cor_noite;
+      sobreTexto.style.color = corPrincipal_noite;
+      titulos.forEach((titulo) => {
+        titulo.style.color = corPrincipal_noite;
+      });
+
+      //CARROSSEL
+      document.body.style.setProperty("--color-fire", cor_noite);
+      botoes.forEach((botao) => {
+        botao.style.backgroundColor = cor_noite;
+      });
+      options.forEach((option) => {
+        option.style.border = `2px solid ${cor_noite}`;
+      });
+      subtitulos.forEach((subtitulo) => {
+        subtitulo.style.color = corPrincipal_noite;
+      });
+
+      //FORMULÁRIO
+      inputButton.style.backgroundColor = cor_noite;
+      inputs.forEach((input) => {
+        input.style.border = `2px solid ${corPrincipal_noite}`;
+
+        function iniciarFocus({ target }) {
+          target.style.border = `2px solid ${cor_noite}`;
+        }
+        function removerFocus({ target }) {
+          target.style.border = `2px solid ${corPrincipal_noite}`;
+        }
+        input.addEventListener("focus", iniciarFocus);
+        input.addEventListener("blur", removerFocus);
+      });
+      form.style.color = corPrincipal_noite;
+
+      //FOOTER
       footer.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
-      footer.style.color = "white";
+      footer.style.color = corPrincipal_noite;
       footer.classList.add("noite");
     }
   }

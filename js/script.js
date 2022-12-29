@@ -8,7 +8,7 @@ import iniciarAnimacaoScroll from "./modules/anima_scroll.js";
 import esconderMenu from "./modules/esconder_menu.js";
 import carrossel from "./modules/carrossel.js";
 import radio from "./modules/radio.js";
-
+import download from "./modules/download.js";
 menu();
 noite();
 modoNoturno();
@@ -19,3 +19,4 @@ iniciarAnimacaoScroll();
 esconderMenu();
 carrossel();
 radio();
+download();

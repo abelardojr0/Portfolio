@@ -2,7 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 200px;
+  @include d(g) {
+    gap: 200px;
+  }
 }
 .sobre-infos {
   display: flex;
@@ -32,6 +34,9 @@
 .imagem-sobre {
   display: none;
   @include d(g) {
+    display: block;
+  }
+  @include d(d) {
     display: block;
   }
   img {

@@ -48,6 +48,9 @@
         opacity: 0.4;
         transition: opacity 100ms ease;
       }
+      &:hover i {
+        opacity: 1;
+      }
       &.active i {
         opacity: 1;
         animation: pulsando 2000ms infinite ease-in-out;

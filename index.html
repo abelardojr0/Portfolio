@@ -18,62 +18,77 @@
 
 <body>
 
-  <nav data-menu class="menu noite">
-    <ul>
-      <li><a href="#inicio" data-link class="active"><i class="lni lni-home"></i></a></li>
-    </ul>
-    <ul>
-      <li><a href="#sobre" data-link><i class="lni lni-pencil-alt"></i></a></li>
-    </ul>
-    <ul>
-      <li><a href="#projetos" data-link><i class="lni lni-layers"></i></a></li>
-    </ul>
-    <ul>
-      <li><a href="#skills" data-link><i class="lni lni-database"></i></a></li>
-    </ul>
-    <ul>
-      <li><a href="#contato" data-link><i class="lni lni-phone"></i></a></li>
-    </ul>
-    <div data-nave class="nave">
-      <div class="luz"></div>
+  <header>
+    <nav data-menu class="menu noite">
+      <ul>
+        <li><a href="#inicio" data-link class="active"><i class="lni lni-home"></i></a></li>
+      </ul>
+      <ul>
+        <li><a href="#sobre" data-link><i class="lni lni-pencil-alt"></i></a></li>
+      </ul>
+      <ul>
+        <li><a href="#projetos" data-link><i class="lni lni-layers"></i></a></li>
+      </ul>
+      <ul>
+        <li><a href="#skills" data-link><i class="lni lni-database"></i></a></li>
+      </ul>
+      <ul>
+        <li><a href="#contato" data-link><i class="lni lni-phone"></i></a></li>
+      </ul>
+      <div data-nave class="nave">
+        <div class="luz"></div>
+      </div>
+    </nav>
+
+    <div data-mudar class="component">
+      <div class="switch">
+        <label for="toggle">
+          <input data-modo="noite" id="toggle" class="toggle-switch" type="checkbox">
+          <div class="sun-moon">
+            <div class="dots"></div>
+          </div>
+          <div class="background">
+            <div class="stars1"></div>
+            <div class="stars2"></div>
+          </div>
+        </label>
+      </div>
     </div>
-  </nav>
+  </header>
+
+  <article>
+
+    <canvas data-noite class="noite ativo" id="bgCanvas"></canvas>
+    <canvas class="ativo" id="terCanvas"></canvas>
 
 
-  <div data-mudar class="component">
-    <div class="switch">
-      <label for="toggle">
-        <input data-modo="noite" id="toggle" class="toggle-switch" type="checkbox">
-        <div class="sun-moon">
-          <div class="dots"></div>
-        </div>
-        <div class="background">
-          <div class="stars1"></div>
-          <div class="stars2"></div>
-        </div>
-      </label>
+    <div data-dia class="dia">
+      <div class="cloud"></div>
+      <div class="cloud cloud2"></div>
+      <div class="cloud cloud3"></div>
     </div>
-  </div>
+  </article>
 
-  <section class="page">
 
-    <article data-scroll class="inicio">
+  <main class="page">
+
+    <section data-scroll class="inicio">
       <div id="inicio"></div>
       <img data-perfil class="perfil" src="img/perfis/perfil-noite.jpg" alt="perfil">
       <div class="texto">
         <p>Abelardo Júnior</p>
         <p data-texto_animado class="texto-animado">Desenvolvedor Front-End</p>
       </div>
-    </article>
+    </section>
 
     <span class="divisoria">
       <hr data-rastro>
       <img data-imagem-divisoria class="foguete" src="img/adereços/divisoria-externa-noite.png" alt="">
     </span>
 
-    <article data-scroll data-container class="sobre">
-      <div id="sobre"></div>
+    <section data-scroll data-container class="sobre">
 
+      <div id="sobre"></div>
       <div class="sobre-infos container">
         <h1 data-titulo class="titulo">Sobre</h1>
         <div data-sobre_texto class="sobre_texto">
@@ -87,8 +102,7 @@
         <img data-imagem-sobre src="img/adereços/sobre-imagem-noite.png" alt="">
       </div>
 
-    </article>
-
+    </section>
 
 
     <span class="divisoria">
@@ -97,7 +111,7 @@
     </span>
 
 
-    <article data-scroll data-container class="projetos container">
+    <section data-scroll data-container class="projetos container">
       <div id="projetos"></div>
 
       <h1 data-titulo class="titulo">Projetos</h1>
@@ -468,8 +482,6 @@
           </div>
 
         </div>
-
-
       </div>
 
       <article class="carrossel">
@@ -849,7 +861,8 @@
           </div>
         </div>
       </article>
-    </article>
+
+    </section>
 
 
 
@@ -860,7 +873,7 @@
       <img data-imagem-divisoria class="foguete" src="img/adereços/divisoria-externa-noite.png" alt="">
     </span>
 
-    <article data-scroll data-container class="skills container">
+    <section data-scroll data-container class="skills container">
 
       <div id="skills"></div>
       <div class="skills-infos">
@@ -884,14 +897,14 @@
       <div class="imagem-skills">
         <img data-imagem-skills src="img/adereços/skills-imagem-noite.png" alt="">
       </div>
-    </article>
+    </section>
 
     <span class="divisoria">
       <hr data-rastro>
       <img data-imagem-divisoria class="foguete" src="img/adereços/divisoria-externa-noite.png" alt="">
     </span>
 
-    <article data-scroll data-container class="contato container">
+    <section data-scroll data-container class="contato container">
       <div id="contato"></div>
 
       <div class="contato-infos">
@@ -910,6 +923,7 @@
       </div>
 
 
+
       <div class="sociais">
         <div class="imagem-contato">
           <img data-imagem-contato src="img/adereços/contato-imagem-noite.png" alt="">
@@ -919,27 +933,39 @@
           <li><a target="_blank" href="https://www.linkedin.com/in/abelardo-junior/"><img src="img/sociais/linkedin.png" alt="linkedin"></a></li>
           <li><a target="_blank" href="https://www.instagram.com/abel.jr_/"><img src="img/sociais/instagram.png" alt="instagram"></a></li>
           <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5585985300694"><img src="img/sociais/whatsapp.png" alt="whatsapp"></a></li>
-
-
         </ul>
+        <a data-ancora class="baixar-botao" href="Currículo - Abelardo Júnior.pdf" download="Currículo - Abelardo Júnior">Currículo</a>
       </div>
-    </article>
+
+      <a data-ancora class="baixar" href="Currículo - Abelardo Júnior.pdf" download="Currículo - Abelardo Júnior"></a>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="ms-container">
+            <label for="ms-download">
+              <div class="ms-content">
+                <div data-download class="ms-content-inside">
+                  <input type="checkbox" id="ms-download" />
+                  <div class="ms-line-down-container" style="text-align: center; padding-top: 10px; box-sizing: border-box;">
+                    <div data-download-traco class="ms-line-down"></div>
+                    Currículo
+                  </div>
+                  <div data-download-traco class="ms-line-point"></div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer data-footer class="footer noite">
       <p>Abelardo Júnior ©</p>
       <p class="direitos">Alguns direitos reservados.</p>
     </footer>
-  </section>
-
-  <canvas data-noite class="ativo" id="bgCanvas"></canvas>
-  <canvas class="ativo" id="terCanvas"></canvas>
 
 
-  <div data-dia class="dia">
-    <div class="cloud"></div>
-    <div class="cloud cloud2"></div>
-    <div class="cloud cloud3"></div>
-  </div>
+  </main>
+
 
   <script type="module" src="js/script.js"></script>
 </body>

@@ -1,5 +1,4 @@
 export default function carrossel() {
-  const links = document.querySelectorAll(".option");
   const pessoais = document.querySelector("[data-carrossel-pessoais]");
   const pessoaisMobile = document.querySelector("[data-mobile-pessoais]");
   const cursosMobile = document.querySelector("[data-mobile-cursos]");
@@ -24,14 +23,5 @@ export default function carrossel() {
 
   opcoes.forEach((opcao) => {
     opcao.addEventListener("change", mudarTema);
-  });
-
-  links.forEach((link) => {
-    link.addEventListener("click", () => {
-      links.forEach((link2) => {
-        link2.classList.remove("active");
-      });
-      link.classList.add("active");
-    });
   });
 }

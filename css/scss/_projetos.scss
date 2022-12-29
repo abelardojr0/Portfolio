@@ -11,6 +11,9 @@
   }
 }
 .projetos-mobile {
+  @include d(d) {
+    display: none;
+  }
   @include d(g) {
     display: none;
   }
@@ -21,10 +24,10 @@
   @include d(g) {
     display: block;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 0;
+    right: 0;
     img {
-      max-width: 300px;
+      max-width: 250px;
       animation: pulsando 3s infinite ease-in-out;
     }
   }
@@ -35,10 +38,10 @@
   @include d(g) {
     display: block;
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 0;
+    left: 0;
     img {
-      max-width: 300px;
+      max-width: 250px;
       animation: pulsando 3s infinite ease-in-out;
     }
   }

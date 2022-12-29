@@ -16,12 +16,22 @@ html {
 
 .container {
   border-radius: 15px;
-  width: 330px;
+  max-width: 330px;
   z-index: 2;
   @include d(g) {
     background-color: transparent;
     border: none;
     box-shadow: none;
+    max-width: 1201px;
+  }
+  @include d(d) {
+    max-width: 1025px;
+  }
+  @include d(n) {
+    max-width: 769px;
+  }
+  @include d(t) {
+    max-width: 481px;
   }
 }
 

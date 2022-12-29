@@ -8,6 +8,9 @@
   font-family: "Roboto", sans-serif;
   transition: 0.25s;
 
+  @include d(d) {
+    display: flex;
+  }
   @include d(g) {
     display: flex;
   }
